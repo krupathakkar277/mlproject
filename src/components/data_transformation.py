@@ -189,7 +189,7 @@ class DataTransformation:
             return preprocessor
         
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomeException(e,sys)
         
     def initiate_data_transformation(self,train_path,test_path):
 
@@ -239,4 +239,4 @@ class DataTransformation:
                 self.data_transformation_config.preprocessor_obj_file_path,
             )
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomeException(e,sys)
